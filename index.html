@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Sushi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Restoran Sushi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservasi">Reservasi</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Halaman Utama -->
+    <section id="home" class="banner">
+        <div class="container">
+            <h2>Selamat Datang di Restoran Sushi!</h2>
+            <p>Nikmati pengalaman bersantap sushi terbaik di kota Anda.</p>
+        </div>
+    </section>
+
+    <!-- Halaman Menu -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Menu Kami</h2>
+            <div class="menu-list">
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/150" alt="Sushi Premium">
+                    <h3>Sushi Premium</h3>
+                    <p>Lezat, segar, dan nikmat.</p>
+                    <p class="price">Rp 50.000</p>
+                    <button class="order-btn">Pesan Sekarang</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/150" alt="Sushi Reguler">
+                    <h3>Sushi Reguler</h3>
+                    <p>Terjangkau dengan rasa istimewa.</p>
+                    <p class="price">Rp 30.000</p>
+                    <button class="order-btn">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halaman Reservasi -->
+    <section id="reservasi" class="reservasi">
+        <div class="container">
+            <h2>Reservasi</h2>
+            <form id="reservation-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" required>
+                
+                <label for="date">Tanggal dan Waktu:</label>
+                <input type="datetime-local" id="date" required>
+                
+                <label for="people">Jumlah Orang:</label>
+                <input type="number" id="people" min="1" required>
+                
+                <button type="submit">Kirim Reservasi</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Halaman Kontak -->
+    <section id="kontak" class="kontak">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Alamat: Jl. Sushi Indah No.10, Tokyo, Jepang</p>
+            <p>Telepon: +62 812-3456-7890</p>
+            <p>Email: info@restoransushi.com</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.789593637639!2d100.53324961534277!3d13.751309290349025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f3f4dfbf13d%3A0x5e76481f6dcba23d!2sBangkok%2C%20Thailand!5e0!3m2!1sen!2sid!4v1686828798472!5m2!1sen!2sid" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Restoran Sushi. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
